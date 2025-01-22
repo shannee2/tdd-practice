@@ -55,6 +55,12 @@ public class FizzTest {
         assertEquals("Buzz", fizz.checkDivisibleByThreeAndFive(5));
     }
 
+    @Test
+    public void testReturnFizzBuzzWhenInput15() {
+        Fizz fizz = new Fizz();
 
+        String result = fizz.checkDivisibleByThreeAndFive(15);
 
+        assertEquals("FizzBuzz", fizz.checkDivisibleByThreeAndFive(15));
+    }
 }

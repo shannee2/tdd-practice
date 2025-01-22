@@ -5,6 +5,9 @@ public class Fizz {
         if(num<=0){
             throw new IllegalArgumentException();
         }
+        if(num%3==0 && num%5==0){
+            return "FizzBuzz";
+        }
         if(num%3==0){
             return "Fizz";
         }
