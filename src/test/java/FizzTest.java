@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FizzTest {
 //  Parts of test:  Arrange, Act, Assert
+    // red green refactor(just as much that needed to pass the test)
+    //
+    // Bang when multiple of 7
 
     @Test
     public void testReturnErrorWhenInputNegative() {
@@ -53,6 +56,33 @@ public class FizzTest {
         String result = fizz.checkDivisibleByThreeAndFive(5);
 
         assertEquals("Buzz", fizz.checkDivisibleByThreeAndFive(5));
+    }
+
+    @Test
+    public void testReturnFizzWhenInput6() {
+        Fizz fizz = new Fizz();
+
+        String result = fizz.checkDivisibleByThreeAndFive(6);
+
+        assertEquals("Fizz", fizz.checkDivisibleByThreeAndFive(6));
+    }
+
+    @Test
+    public void testReturn7WhenInput7() {
+        Fizz fizz = new Fizz();
+
+        String result = fizz.checkDivisibleByThreeAndFive(7);
+
+        assertEquals("Bang", fizz.checkDivisibleByThreeAndFive(7));
+    }
+
+    @Test
+    public void testReturnBuzzWhenInput10() {
+        Fizz fizz = new Fizz();
+
+        String result = fizz.checkDivisibleByThreeAndFive(10);
+
+        assertEquals("Buzz", fizz.checkDivisibleByThreeAndFive(10));
     }
 
     @Test

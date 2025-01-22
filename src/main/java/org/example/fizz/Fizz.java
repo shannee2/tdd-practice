@@ -14,6 +14,9 @@ public class Fizz {
         if(num%5==0){
             return "Buzz";
         }
+        if(num%7==0){
+            return "Bang";
+        }
         return String.valueOf(num);
 
     }
