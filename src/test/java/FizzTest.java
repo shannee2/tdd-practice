@@ -12,4 +12,11 @@ public class FizzTest {
         assertThrows(IllegalArgumentException.class, ()-> fizz.checkDivisibleByThreeAndFive(-1));
     }
 
+    @Test
+    public void testReturnErrorWhenInput0() {
+        Fizz fizz = new Fizz();
+
+        assertThrows(IllegalArgumentException.class, ()-> fizz.checkDivisibleByThreeAndFive(0));
+    }
+
 }
