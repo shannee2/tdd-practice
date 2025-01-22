@@ -5,6 +5,9 @@ public class Fizz {
         if(num<=0){
             throw new IllegalArgumentException();
         }
+        if(num%3==0){
+            return "Fizz";
+        }
         return String.valueOf(num);
 
     }
