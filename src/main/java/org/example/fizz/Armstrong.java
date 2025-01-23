@@ -8,9 +8,11 @@ public class Armstrong {
         if(num<=9){
             return true;
         }
-        if(num>99){
-            return true;
+        int temp = num, sum= 0;
+        while(temp>0){
+            sum+= (int) Math.pow(temp%10, 3);
+            temp = temp/10;
         }
-        return false;
+        return sum == num;
     }
 }
