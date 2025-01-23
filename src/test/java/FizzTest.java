@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FizzTest {
-//  Parts of test:  Arrange, Act, Assert
+    //  Parts of test:  Arrange, Act, Assert
     // red green refactor(just as much that needed to pass the test)
     //
     // Bang when multiple of 7
@@ -68,7 +68,7 @@ public class FizzTest {
     }
 
     @Test
-    public void testReturn7WhenInput7() {
+    public void testReturnBangWhenInput7() {
         Fizz fizz = new Fizz();
 
         String result = fizz.checkDivisibleByThreeAndFive(7);
