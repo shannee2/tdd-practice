@@ -37,5 +37,21 @@ public class ArmstrongTest {
         assertFalse(result);
     }
 
+    @Test
+    public void testReturnTrueWhenInput9() {
+        Armstrong armstrong = new Armstrong();
 
+        boolean result = armstrong.isArmstrong(9);
+
+        assertTrue(result);
+    }
+
+    @Test
+    public void testReturnFalseWhenInput10() {
+        Armstrong armstrong = new Armstrong();
+
+        boolean result = armstrong.isArmstrong(10);
+
+        assertFalse(result);
+    }
 }
