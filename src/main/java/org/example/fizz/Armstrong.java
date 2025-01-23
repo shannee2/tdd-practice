@@ -5,6 +5,9 @@ public class Armstrong {
         if(num<0){
             throw new IllegalArgumentException();
         }
-        return true;
+        if(num<=9){
+            return true;
+        }
+        return false;
     }
 }
