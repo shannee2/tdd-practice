@@ -8,6 +8,9 @@ public class Armstrong {
         if(num<=9){
             return true;
         }
+        if(num>99){
+            return true;
+        }
         return false;
     }
 }
